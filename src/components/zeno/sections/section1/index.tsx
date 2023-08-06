@@ -31,18 +31,10 @@ export default function Section1() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-4 gap-4 h-60">
+      <div className="grid md:grid-cols-4 gap-4 h-[379px]">
         <div className="bg-gray-500 rounded-xl md:col-span-3">
-          <Image
-            className="flex"
-            src="/.svg"
-            alt="Next.js Logo"
-            width={72}
-            height={25}
-            priority
-          />
           <div className="absolute">
-            <p className="font-light text-2xl m-6">
+            <p className="font-light text-4xl m-6">
               See what we Zeno can do for you
               <span>
                 <svg
