@@ -11,7 +11,7 @@ import Header from '@/components/zeno/sections/header'
 export default function Zeno() {
   return (
     <main>
-      <div className="bg-white text-black py-10">
+      <div className="bg-white text-black pt-10">
         <Header />
         <Section1 />
         <Section2 />

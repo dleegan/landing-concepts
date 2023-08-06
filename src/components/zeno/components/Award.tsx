@@ -1,9 +1,9 @@
 const Award = ({ data }: any) => {
   return (
     <div className="flex items-center justify-end w-full">
-      <div className="pr-4 text-end w-auto">
+      <div className="pr-4 text-end w-full">
         <h3 className="text-neutral-500 text-xs md:text-sm">{data.title}</h3>
-        <h2 className="text-yellow-700 font-medium text-sm md:text-lg ">
+        <h2 className="text-yellow-700 font-medium text-sm md:text-lg">
           {data.content}
         </h2>
       </div>

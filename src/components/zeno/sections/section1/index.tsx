@@ -6,7 +6,7 @@ import Award from '../../components/Award'
 
 export default function Section1() {
   return (
-    <div className="flex flex-col w-full text-black px-5 md:px-10 mb-[90px]">
+    <div className="flex flex-col w-full text-black px-4 md:px-14 mb-[90px]">
       <button className="bg-yellow-700/10 border border-yellow-700 text-yellow-700 rounded-full py-2 px-6 text-sm md:text-xl self-center md:self-start">
         Marvelous Ceramic Works
       </button>
@@ -24,14 +24,14 @@ export default function Section1() {
           </h1>
         </div>
 
-        <div className="flex md:flex-col justify-between overflow-scroll">
+        <div className="flex md:flex-col justify-between overflow-scroll -mx-5 md:mx-0">
           {React.Children.toArray(
             AwardsList.map((it: AwardType) => <Award data={it} />)
           )}
         </div>
       </div>
 
-      <div className="grid md:grid-cols-4 gap-4 h-60 bg-black">
+      <div className="grid md:grid-cols-4 gap-4 h-60">
         <div className="bg-gray-500 rounded-xl md:col-span-3">
           <Image
             className="flex"
