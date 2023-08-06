@@ -6,17 +6,23 @@ import Award from '../../components/Award'
 
 export default function Section1() {
   return (
-    <div className="flex-col w-full text-black px-5 md:px-10 mb-[90px]">
-      <button className="text-xl bg-yellow-700/10 border border-yellow-700 text-yellow-700 rounded-full py-[8px] px-[24px]   content-center justify-self-center">
+    <div className="flex flex-col w-full text-black px-5 md:px-10 mb-[90px]">
+      <button className="bg-yellow-700/10 border border-yellow-700 text-yellow-700 rounded-full py-2 px-6 text-sm md:text-xl self-center md:self-start">
         Marvelous Ceramic Works
       </button>
 
-      <div className="md:flex bg-red-100 my-[24px] justify-between ">
-        <h1 className="md:text-7xl w-2/3">
-          From Clay to
-          <span className="font-bold text-yellow-700"> Masterpiece </span>
-          Unveiling the Artistry of Ceramics
-        </h1>
+      <div className="my-6 grid md:grid-cols-4 gap-12 md:gap-4">
+        <div className="md:col-span-3">
+          <h1 className="text-center md:text-left text-6xl md:text-7xl">
+            From Clay to
+            <span className="text-yellow-700 font-mono tracking-tighter">
+              {' Masterpiece'}
+            </span>
+            <br />
+            Unveiling the Artistry <br />
+            of Ceramics
+          </h1>
+        </div>
 
         <div className="flex md:flex-col justify-between overflow-scroll">
           {React.Children.toArray(
@@ -25,8 +31,8 @@ export default function Section1() {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-4 h-60 bg-black">
-        <div className="bg-gray-500 rounded-xl col-span-3">
+      <div className="grid md:grid-cols-4 gap-4 h-60 bg-black">
+        <div className="bg-gray-500 rounded-xl md:col-span-3">
           <Image
             className="flex"
             src="/.svg"
