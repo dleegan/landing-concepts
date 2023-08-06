@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function Header() {
   return (
-    <div className="flex w-full justify-between items-center pb-[107px] px-5 md:px-10">
-      <button className="p-[10px] border border-yellow-700 rounded-full">
+    <div className="grid grid-cols-2 md:grid-cols-3 items-center mb-[107px] px-5 md:px-10">
+      <button className="w-fit p-2 border border-yellow-700 rounded-full order-last md:order-none justify-self-end md:justify-self-start">
         <svg
           width="24"
           height="24"
@@ -18,15 +18,19 @@ export default function Header() {
           />
         </svg>
       </button>
-      <Image
-        className=""
-        src="/zeno/zeno-logo.svg"
-        alt="Next.js Logo"
-        width={72}
-        height={25}
-        priority
-      />
-      <button className=" text-white bg-yellow-700 py-[12px] px-[32px] rounded-full">
+
+      <div className="md:flex justify-center">
+        <Image
+          className=""
+          src="/zeno/zeno-logo.svg"
+          alt="Next.js Logo"
+          width={72}
+          height={25}
+          priority
+        />
+      </div>
+
+      <button className="w-fit text-white bg-yellow-700  py-3 px-8 rounded-full hidden md:block justify-self-end">
         <h2>Contact Us</h2>
       </button>
     </div>
