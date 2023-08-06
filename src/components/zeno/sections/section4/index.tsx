@@ -5,7 +5,7 @@ export default function Section4() {
   return (
     <div className="flex-col w-full py-[90px] px-[50px] bg-neutral-900">
       <div
-        className="w-[1332px] h-[475px] rounded-xl bg-slate-500"
+        className="w-full h-[475px] rounded-xl bg-slate-500"
         style={{ background: 'rgba(251, 251, 251, 0.2)' }}
       />
       <div className="grid md:grid-cols-2 gap-10 mt-16">

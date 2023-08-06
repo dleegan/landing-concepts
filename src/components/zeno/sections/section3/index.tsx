@@ -27,7 +27,7 @@ export default function Section3() {
           Ceramic Craftsmanship
         </p>
 
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-4 overflow-scroll">
           <CarouselItem />
           <CarouselItem />
           <CarouselItem />

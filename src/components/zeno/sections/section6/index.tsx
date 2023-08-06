@@ -28,7 +28,7 @@ export default function Section6() {
       </div>
 
       <div
-        className="w-[1332px] h-[475px] rounded-xl bg-slate-500 mt-20"
+        className="w-full h-[475px] rounded-xl bg-slate-500 mt-20"
         style={{ background: 'rgba(0, 0, 0, 0.20)' }}
       />
     </div>
