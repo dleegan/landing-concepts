@@ -1,11 +1,16 @@
-import Section1 from '@/components/zeno/section1'
-import Section2 from '@/components/zeno/section2'
 import Image from 'next/image'
+import Section1 from '@/components/zeno/sections/section1'
+import Section2 from '@/components/zeno/sections/section2'
+import Section3 from '@/components/zeno/sections/section3'
+import Section4 from '@/components/zeno/sections/section4'
+import Section5 from '@/components/zeno/sections/section5'
+import Section6 from '@/components/zeno/sections/section6'
+import Footer from '@/components/zeno/sections/footer'
 
 export default function Zeno() {
   return (
-    <main className="flex min-h-screen flex-col py-10 bg-white">
-      <div className="flex w-full justify-between items-center pb-[107px] px-5 md:px-10">
+    <main className="flex flex-col bg-white text-black">
+      <div className="flex w-full justify-between items-center pb-[107px] px-5 md:px-10 mt-10">
         <button className="p-[10px] border border-yellow-700 rounded-full">
           <svg
             width="24"
@@ -22,7 +27,7 @@ export default function Zeno() {
         </button>
         <Image
           className=""
-          src="/zeno-logo.svg"
+          src="/zeno/zeno-logo.svg"
           alt="Next.js Logo"
           width={72}
           height={25}
@@ -35,6 +40,11 @@ export default function Zeno() {
 
       <Section1 />
       <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Footer />
     </main>
   )
 }

@@ -3,20 +3,20 @@ import React from 'react'
 
 export default function Section2() {
   return (
-    <div className="flex-col w-full bg-yellow-700	mt-[90px]">
-      <div className="md:flex bg-red-100 mt-[24px] justify-between ">
+    <div className="flex-col w-full bg-yellow-700 py-[90px]">
+      <div className="flex flex-row bg-red-100 mt-[24px] justify-between ">
         <button className="text-xl bg-red-200 border border-red-800 rounded-full py-[8px] px-[24px]">
           About us
         </button>
 
-        <h3 className="md:text-7xl w-2/3">
+        <h3 className="md:text-[56px]">
           Where passion and creativity come to life through the art of ceramics
         </h3>
       </div>
 
       <div className="md:flex justify-between pt-[112px]">
         <Image
-          className="flex"
+          className="flex bg-black"
           src="/.svg"
           alt="Next.js Logo"
           width={72}
