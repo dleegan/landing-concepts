@@ -1,8 +1,33 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+const generalsans = localFont({
+  src: [
+    {
+      path: './fonts/zeno/GeneralSans-Variable.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/zeno/GeneralSans-VariableItalic.woff2',
+      weight: '400',
+      style: 'italic',
+    },
+  ],
+  variable: '--font-generalsans',
+})
+
+const arsenal = localFont({
+  src: [
+    {
+      path: './fonts/zeno/Arsenal-Bold.ttf',
+      weight: '900',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-arsenal',
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +41,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${arsenal.variable} ${generalsans.variable} font-sans`}>
+        {children}
+      </body>
     </html>
   )
 }
