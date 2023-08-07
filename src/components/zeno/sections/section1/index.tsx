@@ -31,8 +31,8 @@ export default function Section1() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-4 gap-4 h-[379px]">
-        <div className="bg-gray-500 rounded-xl md:col-span-3 bg-[url('/img/hero-pattern.svg')]">
+      <div className="grid md:grid-cols-4 gap-4 h-fit md:h-[379px]">
+        <div className="bg-gray-500 rounded-xl md:col-span-3 h-[450px] md:h-auto bg-[url('/img/hero-pattern.svg')]">
           {/* <Image
             className="  bg-gray-500"
             src="/.svg"
@@ -62,7 +62,7 @@ export default function Section1() {
             </p>
           </div>
         </div>
-        <div className=" bg-gray-500 rounded-xl">
+        <div className=" bg-gray-500 rounded-xl h-[360px] md:h-auto">
           {/* <Image
             className="  bg-gray-500"
             src="/.svg"
